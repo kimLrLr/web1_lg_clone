@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12일차LG</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #f0ece4;
+      }
+
+      .header {
+        /* padding: 18px 20px; */
+        padding: 18px 20px 65px 20px;
+        border-bottom-style: solid;
+        border-color: rgba(100, 100, 100, 0.3);
+        border-width: 1px;
+      }
+
+      ul,
+      li {
+        list-style: none;
+      }
+
+      .logo {
+        display: inline;
+        float: left;
+      }
+
+      .logo svg {
+        width: 100px;
+        height: 45px;
+      }
+
+      .menu_wrap {
+        float: left;
+        margin-top: 10px;
+        cursor: default;
+      }
+
+      .menu_wrap li {
+        float: left;
+        margin-left: 40px;
+        font-size: 18px;
+      }
+
+      .menu_wrap li:hover {
+        border-bottom-style: solid;
+        border-color: #ea1917;
+      }
+
+      .btn {
+        width: 88px;
+        text-align: center;
+        float: right;
+        margin-top: 8px;
+        padding: 8px;
+        font-weight: 600;
+        font-size: 14px;
+        background-color: #fff;
+        border-style: solid;
+        border-radius: 25px;
+        border-width: 1px;
+      }
+
+      .btn:hover {
+        color: #fff;
+        background-color: #ea1917;
+        cursor: pointer;
+        border-style: none;
+      }
+
+      .right_wrap {
+        float: right;
+        width: 280px;
+      }
+
+      .btn {
+        display: inline;
+        float: left;
+      }
+
+      .icon {
+        float: right;
+        /* display: inline; */
+        padding: 13px;
+      }
+
+      .icon li {
+        float: left;
+        margin-left: 25px;
+      }
+
+      svg:hover #btn {
+        fill: #ea1917;
+      }
+
+      /* 헤더 끝 */
+
+      .main_img {
+        width: 100%;
+        height: 610px;
+        background-image: url(https://www.lg.com/content/dam/lge/gb/home-page/home-redesign/banner/LifesGood-Hero-Banner-d-final.png);
+        margin: 48px 0px;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .item_wrap {
+        width: 90%;
+        height: 600px;
+        margin: 0px auto;
+      }
+
+      .item {
+        width: 465px;
+        height: 550px;
+        border-radius: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        float: left;
+        margin-right: 25px;
+        display: block;
+        padding: 32px 32px 42px 32px;
+      }
+
+      .item1 {
+        background-image: url(https://www.lg.com/content/dam/lge/gb/promotions/2023-which-award/LG.COM_464x550.jpg);
+        color: #fff;
+      }
+
+      .item2 {
+        background-image: url(https://www.lg.com/content/dam/lge/gb/home-page/block-banners/464x550_great_offer.png);
+      }
+
+      .item3 {
+        background-image: url(https://www.lg.com/content/dam/lge/gb/home-page/block-banners/Virtual_Showroom_464x550_5.jpeg);
+        color: #fff;
+        margin-right: 0px;
+      }
+
+      .mini_box {
+        width: 400px;
+        height: 475px;
+
+        line-height: 40px;
+        padding-top: 350px;
+      }
+
+      .btn_white {
+        color: black;
+        width: 125px;
+      }
+
+      .btn_red {
+        background-color: #ea1917;
+        color: white;
+        border-style: none;
+      }
+
+      .btn_red:hover {
+        border-style: solid;
+        background-color: #fff;
+        color: black;
+      }
+
+      .item h2 {
+        font-size: 35px;
+        font-weight: 300;
+      }
+
+      .item .btn {
+        height: 50px;
+        line-height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="left_wrap">
+        <div class="logo">
+          <a href="https://www.lg.com/uk/" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="225"
+              height="99"
+              viewBox="0 0 225 99"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_415_130964)">
+                <path
+                  d="M134.874 68.7831H165.274V81.2487H120.202V17.2373H134.874V68.7831Z"
+                  fill="#707070"
+                />
+                <path
+                  d="M197.534 56.8451H209.482V68.0462C207.288 68.8892 202.987 69.7323 198.905 69.7323C185.694 69.7323 181.301 62.9711 181.301 49.241C181.301 36.1374 185.483 28.4265 198.682 28.4265C206.039 28.4265 210.213 30.7533 213.675 35.1904L222.802 26.7376C217.227 18.726 207.5 16.2981 198.365 16.2981C177.83 16.2897 167.033 27.5807 167.033 49.1314C167.033 70.5753 176.79 82.2007 198.256 82.2007C208.113 82.2007 217.748 79.6716 222.992 75.9651V44.9078H197.534V56.8451Z"
+                  fill="#707070"
+                />
+                <path
+                  d="M83.831 84.5045C103.008 65.1736 103.007 33.831 83.829 14.499C64.6508 -4.83307 33.5576 -4.83396 14.3805 14.497C-4.79664 33.8279 -4.79576 65.1705 14.3825 84.5025C33.5607 103.835 64.6538 103.835 83.831 84.5045Z"
+                  fill="#A50034"
+                />
+                <path
+                  d="M61.1184 66.6079H51.0826V28.5984H47.3721V70.3594H51.0909V70.3341H61.1268L61.1184 66.6079Z"
+                  fill="white"
+                />
+                <path
+                  d="M86.1485 51.0737H61.1759V47.3447H89.8088C89.8479 48.0669 89.8674 48.7891 89.8674 49.5198C89.8674 71.9725 71.7136 90.1707 49.3252 90.1707C26.9368 90.1707 8.78027 71.9809 8.78027 49.5169C8.78027 27.053 26.9313 8.86597 49.3224 8.86597C49.9134 8.86597 50.5016 8.87814 51.0871 8.9025V12.6034C50.5016 12.5772 49.9153 12.5641 49.328 12.5641C28.9775 12.5641 12.474 29.11 12.474 49.5169C12.474 69.9239 28.9747 86.4726 49.328 86.4726C69.121 86.4726 85.2899 70.8175 86.1457 51.1777L86.1485 51.0737Z"
+                  fill="white"
+                />
+                <path
+                  d="M34.2066 39.8496C35.3263 39.8441 36.4193 39.5043 37.3476 38.8732C38.276 38.2421 38.9981 37.3479 39.4227 36.3036C39.8474 35.2592 39.9557 34.1114 39.7339 33.005C39.5121 31.8987 38.9701 30.8834 38.1764 30.0872C37.3827 29.2911 36.3728 28.7497 35.2742 28.5316C34.1756 28.3134 33.0374 28.4282 32.0035 28.8614C30.9695 29.2946 30.086 30.0268 29.4645 30.9657C28.8429 31.9046 28.5112 33.008 28.5112 34.1367C28.5131 34.8888 28.6618 35.6331 28.949 36.3273C29.2362 37.0214 29.6563 37.6517 30.1851 38.1822C30.714 38.7127 31.3413 39.133 32.0313 39.4191C32.7213 39.7052 33.4605 39.8515 34.2066 39.8496Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_415_130964">
+                  <rect width="223" height="99" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+
+        <ul class="menu_wrap">
+          <li>Shop</li>
+          <li>TV/Audio/Video</li>
+          <li>Appliances</li>
+          <li>Heating&Cooling</li>
+          <li>Computing</li>
+          <li>Support</li>
+        </ul>
+      </div>
+
+      <div class="right_wrap">
+        <div class="btn">Business</div>
+
+        <ul class="icon">
+          <li class="btn1">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  id="btn"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.25024 10.3615C3.25024 6.43394 6.43418 3.25 10.3618 3.25C14.2893 3.25 17.4733 6.43394 17.4733 10.3615C17.4733 14.2891 14.2893 17.473 10.3618 17.473C6.43418 17.473 3.25024 14.2891 3.25024 10.3615ZM10.3618 1.75C5.60575 1.75 1.75024 5.60551 1.75024 10.3615C1.75024 15.1175 5.60575 18.973 10.3618 18.973C12.4916 18.973 14.4408 18.1998 15.9441 16.9188L20.9661 22.0256C21.2565 22.321 21.7314 22.325 22.0267 22.0345C22.322 21.7441 22.326 21.2692 22.0356 20.9739L16.9974 15.8506C18.2315 14.3604 18.9733 12.4476 18.9733 10.3615C18.9733 5.60551 15.1178 1.75 10.3618 1.75Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="btn2">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  id="btn"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.50412 7.32076C7.50412 5.07254 9.32666 3.25 11.5749 3.25C13.8231 3.25 15.6456 5.07254 15.6456 7.32076C15.6456 9.56898 13.8231 11.3915 11.5749 11.3915C9.32666 11.3915 7.50412 9.56898 7.50412 7.32076ZM11.5749 1.75C8.49823 1.75 6.00412 4.24411 6.00412 7.32076C6.00412 9.34963 7.08872 11.1252 8.70974 12.0992C4.68138 13.3254 1.75049 17.0699 1.75049 21.4993C1.75049 21.9135 2.08627 22.2493 2.50049 22.2493H20.6492C21.0634 22.2493 21.3992 21.9135 21.3992 21.4993C21.3992 17.0699 18.4684 13.3254 14.44 12.0992C16.061 11.1252 17.1456 9.34964 17.1456 7.32076C17.1456 4.24411 14.6515 1.75 11.5749 1.75ZM11.5749 13.1749C15.9197 13.1749 19.4868 16.5031 19.8659 20.7493H3.28381C3.66293 16.5031 7.22998 13.1749 11.5749 13.1749Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="btn3">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  id="btn"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M2.50024 2.75C2.08603 2.75 1.75024 3.08579 1.75024 3.5C1.75024 3.91421 2.08603 4.25 2.50024 4.25H4.61947L8.24682 13.9836L8.24685 13.9836C8.66374 15.1026 9.73154 15.8451 10.9266 15.8451H19.3872C19.8014 15.8451 20.1372 15.5093 20.1372 15.0951C20.1372 14.6809 19.8014 14.3451 19.3872 14.3451H10.9266C10.3584 14.3451 9.85077 13.9923 9.65245 13.4599L9.65242 13.4598L9.3615 12.6792H17.2388C18.9017 12.6792 20.3967 11.6113 20.818 10.0234L20.8181 10.0232L22.2225 4.73529C22.2823 4.51022 22.2341 4.27014 22.0921 4.08555C21.9502 3.90095 21.7305 3.79277 21.4976 3.79277H11.4516C11.0374 3.79277 10.7016 4.12856 10.7016 4.54277C10.7016 4.95699 11.0374 5.29277 11.4516 5.29277H20.5224L19.3683 9.6384L19.3682 9.6386C19.1353 10.5167 18.2772 11.1792 17.2388 11.1792H8.83521C8.82434 11.1792 8.81352 11.1794 8.80276 11.1799L5.84314 3.2381C5.73377 2.94462 5.45355 2.75 5.14036 2.75H2.50024ZM8.79383 19.316C8.79383 19.0017 9.04858 18.747 9.36283 18.747C9.67708 18.747 9.93184 19.0017 9.93184 19.316C9.93184 19.6302 9.67708 19.885 9.36283 19.885C9.04858 19.885 8.79383 19.6302 8.79383 19.316ZM9.36283 17.247C8.22015 17.247 7.29383 18.1733 7.29383 19.316C7.29383 20.4587 8.22015 21.385 9.36283 21.385C10.5055 21.385 11.4318 20.4587 11.4318 19.316C11.4318 18.1733 10.5055 17.247 9.36283 17.247ZM18.8597 18.747C18.5454 18.747 18.2907 19.0017 18.2907 19.316C18.2907 19.6302 18.5454 19.885 18.8597 19.885C19.1739 19.885 19.4287 19.6302 19.4287 19.316C19.4287 19.0017 19.1739 18.747 18.8597 18.747ZM16.7907 19.316C16.7907 18.1733 17.717 17.247 18.8597 17.247C20.0023 17.247 20.9287 18.1733 20.9287 19.316C20.9287 20.4587 20.0023 21.385 18.8597 21.385C17.717 21.385 16.7907 20.4587 16.7907 19.316Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="main_img"></div>
+
+      <div class="component">
+        <ul class="item_wrap">
+          <li class="item item1">
+            <div class="mini_box">
+              <h2>Unrivalled</h2>
+              <p>The No1 Home Entertainment Brand voted by Which?</p>
+              <div class="btn btn_red">Buy Now</div>
+            </div>
+          </li>
+
+          <li class="item item2">
+            <div class="mini_box">
+              <h2>Great Offers for You</h2>
+              <p>Find amazing deals on our products only on LG.com</p>
+              <div class="btn btn_red">Buy Now</div>
+            </div>
+          </li>
+
+          <li class="item item3">
+            <div class="mini_box">
+              <h2>Virtual Showroom</h2>
+              <p>Discover our products from the comfort of your home</p>
+              <div class="btn btn_white">Learn More</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
